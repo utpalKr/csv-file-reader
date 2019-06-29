@@ -1,5 +1,12 @@
+
+<div class="validate-container">
+  <div class="validate-header">
+    <h1>CSV File Reader</h1>
+  </div>
+
 <input type="file" #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" />
-<table class="minimalistBlack" *ngIf="records.length > 0">
+</div>
+  <table class="grayTemplate" *ngIf="records.length > 0">
   <thead>
   <tr>
     <th>FirstName </th>
